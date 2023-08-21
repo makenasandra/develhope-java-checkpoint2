@@ -1,0 +1,15 @@
+create table Books(
+id int,
+title varchar(255),
+author  varchar(255),
+published_year int
+);
+
+insert into Books(id, title, author, published_year)
+values
+(1, 'The river', 'Samuel', 2012),
+(2, 'Winter', 'Eli Gone', 2002),
+(3, 'Cars', 'John West', 1912);
+
+select title, author from Books
+where published_year>2000;
